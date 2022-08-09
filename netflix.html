@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Netflix</title>
+    <style>
+
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+
+        }
+
+        .header_top{
+            border: 2px solid rgb(24, 24, 21);
+            padding: 29px 1px;
+            background-color: black;
+            position: sticky;
+            top: 0px;
+            z-index: 100;          /* So text can flow under the Header*/
+            
+        }
+
+        
+        .left{
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            left: 27px;
+
+        }
+
+        .right{
+            display: inline-block;
+            position: absolute;
+            top: 5px;
+            right: 139px;
+        }
+
+        .hamburger{
+            margin: 6px 0px;
+            width: 29px;
+            height: 2px;
+            background-color: white;
+        }
+
+        .logo{
+            position: absolute;
+            top: -10px;
+            left: 67px;
+            color: red;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 41px;
+
+        }
+
+        .one{
+            border: 2px solid black;
+            position: absolute;
+            top: -3px;
+            left: 19px;
+            border-radius: 50%;
+            background-color: rgb(226, 7, 7);
+            padding: 0px 5px;
+            margin: 0px -5px;
+        }
+
+        .search{
+            color: white;
+            margin: 0px 12px;
+            padding: 7px 8px;
+            background-color: black;
+            cursor: pointer;
+            font-size: 27px;
+        }
+
+        .search:hover{
+            background-color: rgb(24, 21, 21);
+        }
+
+        .dots button{
+            position: absolute;
+            top: -10px;
+            right: -84px;
+            color: white;
+            background-color: black;
+            font-size: 40px;
+            cursor: pointer;
+
+        }
+
+        .dots button:hover{
+            background-color: rgb(24, 21, 21);
+        }
+
+        .body img{
+            width: 1583px;
+            height: 450px;
+
+        }
+
+        .name{
+            position: absolute;
+            top: 140px;
+            left: 101px;
+            font-size: 41px;
+
+        }
+
+        .btn{
+            position: absolute;
+            top: 318px;
+            left: 89px;
+            width: 127px;
+            padding: 9px 16px;
+            margin: 3px 9px;
+            background-color: rgb(80 91 96);
+            color: white;
+            border-radius: 5px;
+            font-size: 17px;
+            border: 2px solid transparent;
+            /* position: fixed; */
+        }
+
+        .list{
+            position: absolute;
+            top: 318px;
+            left: 245px;
+            width: 127px;
+            padding: 9px 16px;
+            margin: 3px 9px;
+            background-color: rgb(80 91 96);
+            color: white;
+            border-radius: 5px;
+            font-size: 17px;
+            border: 2px solid transparent;
+        }
+
+        .text{
+            position: absolute;
+            top: 384px;
+            left: 94px;
+            font-size: 22px;
+            
+        }
+        .btn:hover{
+            background-color: rgb(43, 43, 39);
+        }
+        
+        .list:hover{
+            background-color:rgb(43, 43, 39);
+        }
+
+        .pakmovies {
+            line-height: 10px;
+            padding-left: 15px;
+        }
+
+        .pakmovies img{
+            display: inline-block;
+            width: 210px;
+            height: 313px;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        .bollywood{
+            line-height: 10px;
+            padding-left: 15px;
+        }
+
+        .bollywood img{
+            display: inline-block;
+            width: 210px;
+            height: 313px;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        .bollywood{
+            line-height: 10px;
+            padding-left: 15px;
+        }
+
+        .bollywood img{
+            display: inline-block;
+            width: 210px;
+            height: 313px;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        .kids{
+            line-height: 10px;
+            padding-left: 15px;
+        }
+
+        .kids img{
+            display: inline-block;
+            width: 210px;
+            height: 313px;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header_top">
+
+        <div class="left">
+            <div class="hamburger"></div>
+            <div class="one">1</div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+
+            
+            <div class="logo">
+                NETFLIX
+            </div>
+
+        </div>
+
+        <div class="right">
+            
+            <button class="search"> <i class="fa fa-search"></i></button>
+            
+            <div class="dots">
+                
+                <button>...</button>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="body">
+
+        <img src="/images/moneyheist.jpg" alt="Error Loading Image">
+        <div class="name">Money Heist</div>
+
+        <button class="btn"><i class="fa fa-play">&nbsp; Play</i></button>
+        <button class="list"><i class="fa fa-plus">&nbsp; My List</i></button>
+
+        <div class="text">
+             The Proffessor recruits a young female robber and seven <br> other criminals for a grand heist, targetting the royal <br> mint of spain.
+        </div>
+
+        <div class="pakmovies">
+            <h2>Lollywood Movies</h2>
+            
+            <img src="/images/jpna2.jpg" alt="Error Loading Image">
+            <img src="/images/lnj.jpg" alt="Error Loading Image">
+            <img src="/images/teefa.jpg" alt="Error Loading Image">
+            <img src="/images/jpna.jpg" alt="Error Loading Image">
+            <img src="/images/pnj.jpg" alt="Error Loading Image">
+            <img src="/images/wrongno.jpg" alt="Error Loading Image">
+            <img src="/images/qaz.jpg" alt="Error Loading Image">
+        </div>
+
+        <div class="bollywood">
+            <h2>Bollywood Movies</h2>
+
+            <img src="/images/humpty.jpg" alt="Error Loading Image">
+            <img src="/images/dilwale.jpg" alt="Error Loading Image">
+            <img src="/images/players.jpg" alt="Error Loading Image">
+            <img src="/images/dangal.jpg" alt="Error Loading Image">
+            <img src="/images/khoobsurat.jpg" alt="Error Loading Image">
+            <img src="/images/race2.jpg" alt="Error Loading Image">
+            <img src="/images/herapheri.jpg" alt="Error Loading Image">
+
+        </div>
+
+        <div class="kids">
+            <h2>Children & Family TV</h2>
+
+            
+            <img src="/images/cocomelon.jpg" alt="Error Loading Image">
+            <img src="/images/chotabeam.jpg" alt="Error Loading Image">
+            <img src="/images/tomjerry.jpg" alt="Error Loading Image">
+            <img src="/images/manbee.png" alt="Error Loading Image">
+            <img src="/images/maasha.jpg" alt="Error Loading Image">
+            <img src="/images/kungfu.jpg" alt="Error Loading Image">
+            <img src="/images/madagascar.jpg" alt="Error Loading Image">
+
+        </div>
+    </section>
+    
+</body>
+</html>
